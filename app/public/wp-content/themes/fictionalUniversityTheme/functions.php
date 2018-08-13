@@ -22,7 +22,6 @@ function university_adjust_queries($query) {
     if (!is_admin() AND is_post_type_archive('program') AND $query->is_main_query()) {
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
-        $query-set('posts_per_page', 1);
     }
 
     if (!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()) {
