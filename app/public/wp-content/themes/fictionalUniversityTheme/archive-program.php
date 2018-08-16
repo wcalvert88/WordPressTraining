@@ -9,7 +9,7 @@ pageBanner(array(
 
   <div class="container container--narrow page-section">
 
-  <ul clas="link-list min-list">
+  <ul class="min-list link-list">
       <?php 
 	 	while(have_posts()) {
 			the_post(); ?>
