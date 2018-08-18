@@ -2,8 +2,8 @@ const path = require('path'),
 settings = require('./settings');
 
 module.exports = {
-  entry: {
-    App: settings.themeLocation + "js/scripts.js"
+entry: {
+    App: "C:/Users/Wade/Local Sites/fictional-university/app/public/wp-content/themes/fictionalUniversityTheme/js/scripts.js"
   },
   output: {
     path: path.resolve(__dirname, settings.themeLocation + "js"),
