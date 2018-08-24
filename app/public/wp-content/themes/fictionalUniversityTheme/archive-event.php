@@ -19,7 +19,7 @@ pageBanner(array(
 
      <hr class="section-break">
      
-    <p>Looking for a recap of past events? <a href="<?php echo site_url('/past-events'); ?>">Check out the past events archive</a>.</p>
+    <p>Looking for a recap of past events? <a href="<?php echo esc_url(site_url('/past-events')); ?>">Check out the past events archive</a>.</p>
   </div>
 
 <?php
