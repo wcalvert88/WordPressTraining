@@ -48,6 +48,9 @@ class MyNotes {
                 thisNote.slideUp();
                 console.log("Congrats");
                 console.log(response);
+                if (response.user_note_count < 5) {
+                    $(".note-limit-message").removeClass("active");
+                }
             },
             error: (response) => {
                 console.log("Sorry");
@@ -112,6 +115,9 @@ class MyNotes {
                 console.log(response);
             },
             error: (response) => {
+                if(response.responseText == "You have reached your note limit.") {
+                    $(".note-limit-message").addClass("active");
+                }
                 console.log("Sorry");
                 console.log(response);
             }
