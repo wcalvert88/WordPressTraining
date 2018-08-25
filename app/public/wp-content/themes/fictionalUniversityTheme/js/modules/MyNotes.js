@@ -71,6 +71,8 @@ class MyNotes {
             data: ourUpdatedPost,
             success: (response) => {
                 this.makeNoteReadOnly(thisNote);
+                thisNote.find(".note-title-field").val(response.title.raw);
+                thisNote.find(".note-body-field").val(response.content.raw);
                 console.log("Congrats");
                 console.log(response);
             },
