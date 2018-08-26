@@ -1,3 +1,5 @@
 sql/
 logs/
 node_modules/
+local.php
+wp-config.php
