@@ -86,20 +86,39 @@ function university_post_types() {
         'menu_icon' => 'dashicons-welcome-write-blog'
     ));
 
-         // Like Post Type
-         register_post_type('like', array(
-            'supports' => array('title'),
-            'public' => false,
-            'show_ui' => true,
-            'labels' => array(
-                'name' => 'Likes',
-                'add_new_item' => 'Add New Like',
-                'edit_item' => 'Edit Like',
-                'all_items' => 'All Likes',
-                'singular_name' => 'Like'
-            ),
-            'menu_icon' => 'dashicons-heart'
-        ));
+    // Like Post Type
+    register_post_type('like', array(
+        'supports' => array('title'),
+        'public' => false,
+        'show_ui' => true,
+        'labels' => array(
+            'name' => 'Likes',
+            'add_new_item' => 'Add New Like',
+            'edit_item' => 'Edit Like',
+            'all_items' => 'All Likes',
+            'singular_name' => 'Like'
+        ),
+        'menu_icon' => 'dashicons-heart'
+    ));
+
+    // Homepage Slider Post Type
+    register_post_type('slide', array(
+        'capability_type' => 'slide',
+        'map_meta_cap' => true,
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'has_archive' => true,
+        'public' => true,
+        'show_ui' => true,
+        'labels' => array(
+            'name' => 'Slides',
+            'add_new_item' => 'Add New Slide',
+            'edit_item' => 'Edit Slide',
+            'all_items' => 'All Slides',
+            'singular_name' => 'Slide'
+        ),
+        'menu_icon' => 'dashicons-screenoptions'
+    ));
 }
 
 add_action('init', 'university_post_types');
