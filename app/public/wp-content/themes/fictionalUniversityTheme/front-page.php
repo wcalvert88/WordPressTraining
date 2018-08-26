@@ -93,7 +93,7 @@
       <div class="hero-slider__overlay">
         <h2 class="headline headline--medium t-center"><?php echo get_the_title(); ?></h2>
         <p class="t-center"><?php echo get_the_excerpt(); ?></p>
-        <p class="t-center no-margin"><a href="<?php echo get_the_permalink(); ?>" class="btn btn--blue">Learn more</a></p>
+        <p class="t-center no-margin"><a href="<?php echo get_the_permalink(); ?>" class="btn btn--blue">See more</a></p>
       </div>
     </div>
   </div>
