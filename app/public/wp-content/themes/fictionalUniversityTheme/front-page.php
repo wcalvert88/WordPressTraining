@@ -86,9 +86,10 @@
 
   while ($homepageSlide->have_posts()) {
     $homepageSlide->the_post();
+
   ?>
 
-  <div class="hero-slider__slide" style="background-image: url(<?php the_post_thumbnail_url('pagebanner'); ?>);">
+  <div class="hero-slider__slide" style="background-image: url(<?php wp_is_mobile() ? the_post_thumbnail_url('thumbnail') : the_post_thumbnail_url();  ?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
         <h2 class="headline headline--medium t-center"><?php echo get_the_title(); ?></h2>
