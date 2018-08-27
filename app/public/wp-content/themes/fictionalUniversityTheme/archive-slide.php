@@ -3,7 +3,7 @@
 get_header();
 pageBanner(array(
   'title' => 'All Slides',
-  'subtitle' => 'Just a fun extra credit excersize.'
+  'subtitle' => 'Just a fun extra credit exercise.'
 ));
 ?>
       <?php 
